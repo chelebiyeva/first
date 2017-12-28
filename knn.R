@@ -46,6 +46,8 @@ points(iris[, 3:4], pch = 21, bg = colors[iris$Species], col
        
        = colors[iris$Species], asp = 1)
 
+%loo
+
 euclideanDistance <- function(u, v)
 {
   sqrt(sum((u - v)^2))
