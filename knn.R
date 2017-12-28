@@ -6,13 +6,14 @@ euclideanDistance <- function(a, b)
 KNN <- function(yl , point_to_classify, k , metric = euclideanDistance){
   distances <- c()
   for(i in 1:nrow(yl)){
-    distances[i] <- metric(yl[i , 1:length(yl) - 1] , point_to_classify)
+    distances[i] <- metric(yl[i , 1:length(yl) - 1] , point_to_classify)# рассчитываем расстояние каждой точки классов до u
   }
-  yl <- cbind(yl , distances)
+  }
+  yl <- cbind(yl , distances) #объединяет свои аргументы в одну матрицу или таблицу данных по столбцам,
   ordered_dist_array <- yl[order(distances),]
   k_arr <- ordered_dist_array[1:k , 3]
   class_iris <- table(k_arr) 
-  return(names(which.max(class_iris)))
+  return(names(which.max(class_iris)))# возвращаем название класса к которому принадлежит точка
 }
 
 
