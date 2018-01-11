@@ -30,7 +30,7 @@
 
 Пример выборки IrisFishers 
 
-![Иллюстрация к проекту](https://github.com/chelebiyeva/first/raw/master/knn1.png)
+![Иллюстрация к проекту](https://github.com/chelebiyeva/first/raw/master/kn.png)
 
 **Преимущества:**
 
